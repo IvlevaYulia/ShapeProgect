@@ -1,5 +1,5 @@
 public interface InOut {
-    void outputResault ();
+    void outputResult();
     void inputData ();
 
 }

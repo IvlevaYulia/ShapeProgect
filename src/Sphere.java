@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Sphere extends Shape {
@@ -18,6 +19,12 @@ public class Sphere extends Shape {
         System.out.println("Объем сферы: " + calculateV()  + "см"+(char)179  + ".");
         System.out.println("Площадь поверхности сферы: " + calculateS() + "см"+(char)178  + ".");
         System.out.println();
+        System.out.println("Для продолжения нажмите любую кнопку...");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

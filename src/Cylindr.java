@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Cylindr extends Shape {
@@ -19,6 +20,12 @@ public class Cylindr extends Shape {
         System.out.println("Объем цилиндра: " + calculateV()  + "см"+(char)179  + ".");
         System.out.println("Площадь поверхности цилиндра: " + calculateS() + "см"+(char)178  + ".");
         System.out.println();
+        System.out.println("Для продолжения нажмите любую кнопку...");
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

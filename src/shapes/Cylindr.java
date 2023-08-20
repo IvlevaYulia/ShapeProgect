@@ -1,9 +1,12 @@
+package shapes;
+
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Cylindr extends Shape {
     protected double height;
     protected double radius;
+    private Scanner scan;
 
     @Override
     public double calculateV() {
@@ -34,8 +37,8 @@ public class Cylindr extends Shape {
         Scanner scan = new Scanner(System.in);
         this.radius = scan.nextDouble();
         System.out.println("Введите высоту цилиндра в сантиметрах.");
-        Scanner scan1 = new Scanner(System.in);
-        this.height = scan1.nextDouble();
+        //Scanner scan1 = new Scanner(System.in);
+        this.height = scan.nextDouble();
 
     }
 }

@@ -1,8 +1,11 @@
+package shapes;
+
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Sphere extends Shape {
     protected double radius;
+    private Scanner scan;
 
     @Override
     public double calculateV() {
@@ -31,8 +34,8 @@ public class Sphere extends Shape {
     @Override
     public void inputData() {
         System.out.println("Введите радиус сферы  в сантиметрах.");
-        Scanner scanner = new Scanner(System.in);
-        this.radius = scanner.nextDouble();
+        Scanner scan = new Scanner(System.in);
+        this.radius = scan.nextDouble();
 
     }
 }
